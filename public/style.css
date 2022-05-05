@@ -1,0 +1,135 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color:whitesmoke;
+    box-sizing: border-box;
+}
+
+#header{
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 1px solid black;
+}
+
+#header-home{
+    text-decoration: none;
+    color: black;
+}
+
+#header-users{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+#header-register{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+#header-login{
+    text-decoration: none;
+    color: black;
+}
+
+#header-order{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+#header-profile{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+#header-logout{
+    text-decoration: none;
+    color: black;
+}
+
+#welcome{
+    text-align: center;
+}
+
+#home-info{
+    text-align: center;
+}
+
+/* Button Designs */
+#login{  
+    background-color: rgb(149, 231, 149);
+    color: black;
+    transition-duration: 0.2s;
+    border-radius: 12px;
+}
+
+#login:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+#register{  
+    background-color: rgb(149, 231, 149);
+    color: black;
+    transition-duration: 0.2s;
+    border-radius: 12px;
+}
+
+#register:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+#save-privacy{  
+    background-color: rgb(149, 231, 149);
+    color: black;
+    transition-duration: 0.2s;
+    border-radius: 12px;
+}
+
+#save-privacy:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+#submit{  
+    background-color: rgb(149, 231, 149);
+    color: black;
+    transition-duration: 0.2s;
+    border-radius: 12px;
+}
+
+#submit{
+    background-color: antiquewhite;
+    color: black;
+}
+
+/* Inputs */
+#username{
+    width: 25%;
+    padding: 3px 2px;
+    margin: 2px 2;
+    box-sizing: border-box;
+}
+
+#password{
+    width: 25%;
+    padding: 3px 2px;
+    margin: 2px 8;
+    box-sizing: border-box;
+}
+
+/* Users Page */
+#users-intro{
+    text-align: center;
+}
+
+#users-list{
+    text-align: center;
+}
