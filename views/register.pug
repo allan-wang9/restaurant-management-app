@@ -1,0 +1,21 @@
+html
+    head  
+        title Register
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap") 
+        link(rel="stylesheet", href="/style.css")
+      
+    body
+        include ./partials/header
+
+        p Register a new account. Please enter a valid username and password.
+
+        p Username:
+            input#username(type='textbox' size='30')
+
+        p Password:
+            input#password(type='password' size='30')
+        br
+
+        button#register(type='button' onclick='register()') Register
+
+        script(src='/js/register.js')

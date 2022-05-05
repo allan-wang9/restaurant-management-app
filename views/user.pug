@@ -1,0 +1,33 @@
+html
+    head  
+        title #{user.username}
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap") 
+        link(rel="stylesheet", href="/style.css")
+      
+    body
+        include ./partials/header
+
+        p Below are the user's profile details and settings. Only logged in user's may make changes.
+    
+        form#privacy-form
+            p Private Mode:
+            input#enabled(type='radio' name='privacy-toggle' value='Enabled')
+            label(for='enabled') Enabled
+            br
+            input#disabled(type='radio' name='privacy-toggle' value='Disabled')
+            label(for='disabled') Disabled
+            br
+
+        button#save-privacy(type='button' onclick='savePrivacy()') Save 
+        br
+        br
+
+        p Order History: 
+        div#order-history
+
+            if orders != undefined
+            each order in orders 
+                a#order-history(href="/orders/" + user._id) #{order._id}
+                br
+
+        script(src='/js/user.js')

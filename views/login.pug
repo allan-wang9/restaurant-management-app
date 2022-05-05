@@ -1,0 +1,25 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=chrome")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Log In
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap") 
+        link(rel="stylesheet", href="/style.css")
+    
+    body 
+        include ./partials/header
+
+        form(action='/login' method='post')
+        | Username: 
+        input#username(type='text' name='username' required='')
+        br
+        br
+        | Password: 
+        input#password(type='password' name='password' required='')
+        br
+        br
+
+        button#login(type='button' onclick='login()') Login
+
+        script(src='/js/login.js')

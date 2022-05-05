@@ -1,0 +1,27 @@
+html
+    head  
+        title Order
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap") 
+        link(rel="stylesheet", href="/style.css")
+      
+    body
+        include ./partials/header
+
+        p ORDER SUMMARY
+        br 
+
+        p Ordered By: #{usernameObj}
+
+        p Restaurant Name: #{orderObj["order"].restaurantName}
+
+        p Order Details
+        each valueObj, keyObj in orderObj["order"].order
+            p #{valueObj["quantity"]}x #{valueObj["name"]} 
+
+        p Subtotal: $#{orderObj["order"].subtotal}
+
+        p Tax: $#{orderObj["order"].tax}
+
+        p Delivery Fee: $#{orderObj["order"].fee}
+
+        p Total: $#{orderObj["order"].total}

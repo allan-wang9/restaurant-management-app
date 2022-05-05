@@ -1,0 +1,33 @@
+html
+    head
+        title Order Form
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap") 
+        link(rel="stylesheet", href="/style.css")
+
+        style.
+            .column {
+                float: left;
+            }
+            .left {
+                width: 10%;
+            }
+            .right {
+                width: 25%;
+            }
+            .middle {
+                width: 65%;
+            }
+
+    body(onload='init()')
+        include ./partials/header
+
+        select#restaurant-select
+        br
+        br
+        #info
+        #main
+        #left.column.left
+        #middle.column.middle
+        #right.column.right
+
+        script(src='/js/orderform.js')

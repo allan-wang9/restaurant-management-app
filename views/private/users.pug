@@ -1,0 +1,16 @@
+html
+    head  
+        title Users
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap") 
+        link(rel="stylesheet", href="/style.css")
+      
+    body
+        include ./partials/header
+
+        p#users-intro List of registered users.
+        br 
+    
+        #users-list
+            each user in usersList 
+                a(href="/private-users/" + user._id) #{user.username}
+                br 
